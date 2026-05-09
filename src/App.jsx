@@ -43,11 +43,19 @@ function App() {
   };
 
   const trackWhatsAppClick = () => {
+    // Push GTM Event
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ 'event': 'whatsapp_click' });
+    
     const text = encodeURIComponent("Merhaba, YKS’siz üniversite kayıtları hakkında bilgi almak istiyorum.");
     window.open(`https://wa.me/905050345791?text=${text}`, '_blank');
   };
 
   const trackPhoneClick = () => {
+    // Push GTM Event
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ 'event': 'phone_click' });
+
     window.location.href = 'tel:+908502422428';
   };
 
@@ -65,6 +73,12 @@ function App() {
       });
 
       if (response.ok) {
+        // Push GTM DataLayer Event for rock-solid conversion tracking
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          'event': 'form_submission_success'
+        });
+
         // Success state handling
         setShowSuccessModal(true);
         form.reset();
