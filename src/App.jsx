@@ -94,13 +94,26 @@ function App() {
   };
 
   const faqs = [
-    { question: "YKS olmadan başvuru mümkün mü?", answer: "Evet, Uluslararası Balkan Üniversitesi (IBU) olarak YKS puanı şartı aranmaksızın uluslararası öğrenci kabul standartları ile öğrenci alıyoruz." },
-    { question: "Hangi bölümler mevcut?", answer: "Diş Hekimliği, Hukuk, Bilgisayar Mühendisliği, Psikoloji, Mimarlık ve daha birçok alanda 20’den fazla lisans programı ile uluslararası eğitim fırsatlarını keşfedin." },
-    { question: "Diplomam Türkiye'de geçerli mi?", answer: "Üniversitemiz YÖK tarafından tanınmaktadır. Ayrıca Avrupa standartlarında Bologna Sürecine uyumlu olduğundan Mavi Diploma eki verilir ve diplomanız tüm Avrupa'da geçerlidir." },
-    {
-      question: "Eğitim dili nedir?", answer: "Uluslararası Balkan Üniversitesindeki tüm eğitim düzeyindeki (lisans, yüksek lisans, doktora) eğitim dili İngilizce’dir. Hemşirelik ve Ebelik programlarını içeren Sağlık Meslek Yüksekokulu bölümleri dışında eğitim dili Makedon dilinde de düzenlenebilmektedir"
+    { 
+      question: "YKS olmadan başvuru mümkün mü?", 
+      answer: "Evet, Uluslararası Balkan Üniversitesinde Diş Hekimliği ve Hukuk fakültesi haricinde bütün bölümlere YKS sınav şartı aranmaksızın kayıt alınabilmektedir. Bu iki bölümde ise Türkiye Cumhuriyeti vatandaşı öğrencilerin Türkiye'de diploma denkliği alabilmesi için YKS sınavından ilgili başarı puanına sahip olması gerekmektedir." 
     },
-    { question: "Süreç nasıl işliyor?", answer: "Başvuru formunu doldurduktan sonra uzman danışmanımız sizi arayarak durumunuzu değerlendirir, uygun bölümler ve erken ödeme indirimleri belirlenir, ardından resmi kayıt süreci başlatılır." }
+    { 
+      question: "Diplomam Türkiye'de geçerli mi?", 
+      answer: "Üniversitemiz YÖK tarafından tanınmaktadır. Ayrıca üniversitemizin eğitim müfredatı Avrupa Birliği Bologna Sürecine uyumlu olduğun için mezun öğrenciler mezuniyet sonrasında Avrupa'da diploma denkliğine başvurabilirler." 
+    },
+    { 
+      question: "Hangi bölümler mevcut?", 
+      answer: "Diş Hekimliği, Hukuk, Bilgisayar Mühendisliği, Psikoloji, Mimarlık ve daha birçok alanda 20’den fazla lisans programı ile uluslararası eğitim fırsatlarını keşfedin." 
+    },
+    {
+      question: "Eğitim dili nedir?", 
+      answer: "Uluslararası Balkan Üniversitesindeki tüm eğitim düzeyindeki (lisans, yüksek lisans, doktora) eğitim dili İngilizce’dir."
+    },
+    { 
+      question: "Süreç nasıl işliyor?", 
+      answer: "Aday öğrenciler üniversitemizin kayıt ofisi yetkilileri ile görüştükten sonra kayıt olmaya karar vermeleri halinde online kayıt formu doldurulur ve bu şekilde ön kayıt süreci başlamış olur. Ödeme ve evrak sürecinin tamamlanması ile beraber kayıt süreci tamamlanmış olur." 
+    }
   ];
 
   const toggleFaq = (index) => {
