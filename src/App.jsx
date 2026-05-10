@@ -249,6 +249,72 @@ function App() {
           </div>
         </div>
       </section>
+      
+      {/* FINANCE HIGHLIGHT SECTION - NEW PROMINENT INSERTION */}
+      <section style={{ padding: '48px 0 0', position: 'relative', zIndex: 5 }}>
+        <div className="container">
+          <div className="grid md:grid-cols-2 gap-6">
+            
+            {/* Banner 1: Erken Ödeme */}
+            <div style={{ 
+              background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)',
+              border: '2px solid rgba(37, 99, 235, 0.15)',
+              borderRadius: 'var(--radius-lg)',
+              padding: 'clamp(32px, 5vw, 48px) 32px',
+              textAlign: 'center',
+              boxShadow: '0 20px 40px -10px rgba(37, 99, 235, 0.12)',
+              transition: 'transform 0.3s ease',
+              position: 'relative',
+              overflow: 'hidden'
+            }}>
+              <div style={{ position: 'absolute', top: '-20px', right: '-20px', opacity: 0.05 }}>
+                <Percent size={140} />
+              </div>
+              <div style={{ 
+                width: '60px', height: '60px', background: '#eff6ff', borderRadius: '16px', 
+                display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px',
+                color: '#2563eb', boxShadow: 'inset 0 0 0 1px rgba(37,99,235,0.1)'
+              }}>
+                <Percent size={28} strokeWidth={2.5} />
+              </div>
+              <h3 style={{ color: 'var(--ibu-navy)', fontSize: 'clamp(22px, 3vw, 28px)', fontWeight: 800, letterSpacing: '-0.03em', marginBottom: '8px' }}>
+                Erken Ödeme İndirimleri
+              </h3>
+              <p style={{ color: '#64748b', fontWeight: 600, fontSize: '15px' }}>Kaçırılmayacak Erken Kayıt Fırsatları</p>
+            </div>
+
+            {/* Banner 2: Taksit Seçenekleri */}
+            <div style={{ 
+              background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)',
+              border: '2px solid rgba(217, 4, 41, 0.15)',
+              borderRadius: 'var(--radius-lg)',
+              padding: 'clamp(32px, 5vw, 48px) 32px',
+              textAlign: 'center',
+              boxShadow: '0 20px 40px -10px rgba(217, 4, 41, 0.12)',
+              transition: 'transform 0.3s ease',
+              position: 'relative',
+              overflow: 'hidden'
+            }}>
+               <div style={{ position: 'absolute', top: '-20px', right: '-20px', opacity: 0.05 }}>
+                <Award size={140} />
+              </div>
+              <div style={{ 
+                width: '60px', height: '60px', background: '#fff1f2', borderRadius: '16px', 
+                display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px',
+                color: 'var(--ibu-red)', boxShadow: 'inset 0 0 0 1px rgba(217,4,41,0.1)'
+              }}>
+                <Award size={28} strokeWidth={2.5} />
+              </div>
+              <h3 style={{ color: 'var(--ibu-navy)', fontSize: 'clamp(22px, 3vw, 28px)', fontWeight: 800, letterSpacing: '-0.03em', marginBottom: '8px' }}>
+                Taksit Seçenekleri
+              </h3>
+              <p style={{ color: '#64748b', fontWeight: 600, fontSize: '15px' }}>Bütçenize Uygun Kolay Ödeme Planları</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
 
       {/* 3. VIDEO AUTHORITY SECTION */}
       <section className="section-pad">
@@ -380,9 +446,15 @@ function App() {
                   </li>
                   <li>
                     <div className="urgency-list-icon">
+                      <Percent size={28} color="white" />
+                    </div>
+                    <span>Erken Ödeme İndirimleri</span>
+                  </li>
+                  <li>
+                    <div className="urgency-list-icon">
                       <Award size={28} color="white" />
                     </div>
-                    <span>Erken Ödeme Avantajları</span>
+                    <span>Taksit Seçenekleri</span>
                   </li>
 
                 </ul>
