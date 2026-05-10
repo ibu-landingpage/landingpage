@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import {
-  Phone, MessageCircle, Clock, Users, Award, ChevronDown,
+  Phone, MessageCircle, Clock, Users, Award, ChevronDown, Percent,
   GraduationCap, Building, ArrowRight, ShieldCheck,
   MapPin, Camera, PlayCircle, Star, Headset, ChevronLeft, ChevronRight, Mail
 } from 'lucide-react';
@@ -148,20 +148,23 @@ function App() {
 
             {/* HERO MESSAGING */}
             <div>
-              <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginBottom: '32px' }}>
+              <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '32px' }}>
                 <span className="animate-pulse-red" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 16px', background: 'var(--ibu-red)', color: 'white', borderRadius: '980px', fontWeight: 700, fontSize: '13px' }}>
                   <ShieldCheck size={16} /> Sınırlı Kontenjan!
                 </span>
                 <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 16px', background: 'rgba(9, 19, 37, 0.05)', color: 'var(--ibu-navy)', borderRadius: '980px', fontWeight: 700, fontSize: '13px' }}>
                   <Star size={16} /> Ücretsiz Danışmanlık
                 </span>
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 16px', background: 'rgba(37, 99, 235, 0.1)', color: '#2563eb', borderRadius: '980px', fontWeight: 700, fontSize: '13px', border: '1px solid rgba(37, 99, 235, 0.2)' }}>
+                  <Percent size={15} /> Erken Ödeme İndirimleri & Taksit
+                </span>
               </div>
 
               <h1 className="typography-hero" style={{ marginBottom: '24px' }}>
                 <span className="text-gradient">YKS’siz Üniversite</span><br />Kayıtları Başladı
               </h1>
-              <p className="typography-p" style={{ marginBottom: '48px', maxWidth: '480px' }}>
-                Bölüm seçenekleri, ücretler ve başvuru süreci hakkında uzman danışmanlarımızdan ücretsiz bilgi alın.
+              <p className="typography-p" style={{ marginBottom: '48px', maxWidth: '520px' }}>
+                Bölüm seçenekleri, ücretler, <strong>erken ödeme indirimleri ve taksit seçenekleri</strong> hakkında uzman danışmanlarımızdan ücretsiz bilgi alın.
               </p>
 
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
