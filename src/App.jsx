@@ -46,7 +46,7 @@ function App() {
     // Push GTM Event
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({ 'event': 'whatsapp_click' });
-    
+
     const text = encodeURIComponent("Merhaba, YKS’siz üniversite kayıtları hakkında bilgi almak istiyorum.");
     window.open(`https://wa.me/905050345791?text=${text}`, '_blank');
   };
@@ -94,25 +94,25 @@ function App() {
   };
 
   const faqs = [
-    { 
-      question: "YKS olmadan başvuru mümkün mü?", 
-      answer: "Evet, Uluslararası Balkan Üniversitesinde Diş Hekimliği ve Hukuk fakültesi haricinde bütün bölümlere YKS sınav şartı aranmaksızın kayıt alınabilmektedir. Bu iki bölümde ise Türkiye Cumhuriyeti vatandaşı öğrencilerin Türkiye'de diploma denkliği alabilmesi için YKS sınavından ilgili başarı puanına sahip olması gerekmektedir." 
-    },
-    { 
-      question: "Diplomam Türkiye'de geçerli mi?", 
-      answer: "Üniversitemiz YÖK tarafından tanınmaktadır. Ayrıca üniversitemizin eğitim müfredatı Avrupa Birliği Bologna Sürecine uyumlu olduğun için mezun öğrenciler mezuniyet sonrasında Avrupa'da diploma denkliğine başvurabilirler." 
-    },
-    { 
-      question: "Hangi bölümler mevcut?", 
-      answer: "Diş Hekimliği, Hukuk, Bilgisayar Mühendisliği, Psikoloji, Mimarlık ve daha birçok alanda 20’den fazla lisans programı ile uluslararası eğitim fırsatlarını keşfedin." 
+    {
+      question: "YKS olmadan başvuru mümkün mü?",
+      answer: "Evet, Uluslararası Balkan Üniversitesinde Diş Hekimliği ve Hukuk fakültesi haricinde bütün bölümlere YKS sınav şartı aranmaksızın kayıt alınabilmektedir. Bu iki bölümde ise Türkiye Cumhuriyeti vatandaşı öğrencilerin Türkiye'de diploma denkliği alabilmesi için YKS sınavından ilgili başarı puanına sahip olması gerekmektedir."
     },
     {
-      question: "Eğitim dili nedir?", 
+      question: "Diplomam Türkiye'de geçerli mi?",
+      answer: "Üniversitemiz YÖK tarafından tanınmaktadır. Ayrıca üniversitemizin eğitim müfredatı Avrupa Birliği Bologna Sürecine uyumlu olduğun için mezun öğrenciler mezuniyet sonrasında Avrupa'da diploma denkliğine başvurabilirler."
+    },
+    {
+      question: "Hangi bölümler mevcut?",
+      answer: "Diş Hekimliği, Hukuk, Bilgisayar Mühendisliği, Psikoloji, Mimarlık ve daha birçok alanda 20’den fazla lisans programı ile uluslararası eğitim fırsatlarını keşfedin."
+    },
+    {
+      question: "Eğitim dili nedir?",
       answer: "Uluslararası Balkan Üniversitesindeki tüm eğitim düzeyindeki (lisans, yüksek lisans, doktora) eğitim dili İngilizce’dir."
     },
-    { 
-      question: "Süreç nasıl işliyor?", 
-      answer: "Aday öğrenciler üniversitemizin kayıt ofisi yetkilileri ile görüştükten sonra kayıt olmaya karar vermeleri halinde online kayıt formu doldurulur ve bu şekilde ön kayıt süreci başlamış olur. Ödeme ve evrak sürecinin tamamlanması ile beraber kayıt süreci tamamlanmış olur." 
+    {
+      question: "Süreç nasıl işliyor?",
+      answer: "Aday öğrenciler üniversitemizin kayıt ofisi yetkilileri ile görüştükten sonra kayıt olmaya karar vermeleri halinde online kayıt formu doldurulur ve bu şekilde ön kayıt süreci başlamış olur. Ödeme ve evrak sürecinin tamamlanması ile beraber kayıt süreci tamamlanmış olur."
     }
   ];
 
@@ -155,9 +155,7 @@ function App() {
                 <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 16px', background: 'rgba(9, 19, 37, 0.05)', color: 'var(--ibu-navy)', borderRadius: '980px', fontWeight: 700, fontSize: '13px' }}>
                   <Star size={16} /> Ücretsiz Danışmanlık
                 </span>
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 16px', background: 'rgba(37, 99, 235, 0.1)', color: '#2563eb', borderRadius: '980px', fontWeight: 700, fontSize: '13px', border: '1px solid rgba(37, 99, 235, 0.2)' }}>
-                  <Percent size={15} /> Erken Ödeme İndirimleri & Taksit
-                </span>
+
               </div>
 
               <h1 className="typography-hero" style={{ marginBottom: '24px' }}>
@@ -249,14 +247,14 @@ function App() {
           </div>
         </div>
       </section>
-      
+
       {/* FINANCE HIGHLIGHT SECTION - NEW PROMINENT INSERTION */}
       <section style={{ padding: '48px 0 0', position: 'relative', zIndex: 5 }}>
         <div className="container">
           <div className="grid md:grid-cols-2 gap-6">
-            
+
             {/* Banner 1: Erken Ödeme */}
-            <div style={{ 
+            <div style={{
               background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)',
               border: '2px solid rgba(37, 99, 235, 0.15)',
               borderRadius: 'var(--radius-lg)',
@@ -270,8 +268,8 @@ function App() {
               <div style={{ position: 'absolute', top: '-20px', right: '-20px', opacity: 0.05 }}>
                 <Percent size={140} />
               </div>
-              <div style={{ 
-                width: '60px', height: '60px', background: '#eff6ff', borderRadius: '16px', 
+              <div style={{
+                width: '60px', height: '60px', background: '#eff6ff', borderRadius: '16px',
                 display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px',
                 color: '#2563eb', boxShadow: 'inset 0 0 0 1px rgba(37,99,235,0.1)'
               }}>
@@ -284,7 +282,7 @@ function App() {
             </div>
 
             {/* Banner 2: Taksit Seçenekleri */}
-            <div style={{ 
+            <div style={{
               background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)',
               border: '2px solid rgba(217, 4, 41, 0.15)',
               borderRadius: 'var(--radius-lg)',
@@ -295,11 +293,11 @@ function App() {
               position: 'relative',
               overflow: 'hidden'
             }}>
-               <div style={{ position: 'absolute', top: '-20px', right: '-20px', opacity: 0.05 }}>
+              <div style={{ position: 'absolute', top: '-20px', right: '-20px', opacity: 0.05 }}>
                 <Award size={140} />
               </div>
-              <div style={{ 
-                width: '60px', height: '60px', background: '#fff1f2', borderRadius: '16px', 
+              <div style={{
+                width: '60px', height: '60px', background: '#fff1f2', borderRadius: '16px',
                 display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px',
                 color: 'var(--ibu-red)', boxShadow: 'inset 0 0 0 1px rgba(217,4,41,0.1)'
               }}>
