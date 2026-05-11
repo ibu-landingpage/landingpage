@@ -15,6 +15,79 @@ const galleryItems = [
   { src: "https://www.balkan.edu.tr/wp-content/uploads/2025/12/imgi_3_582777747_18538347433016118_1701999184263958107_n.jpeg", title: "Etkinlik" }
 ];
 
+const programData = [
+  { 
+    faculty: "İktisadi ve İdari Bilimler Fakültesi", 
+    color: "#2563eb",
+    programs: [
+      { name: "Uluslararası Ekonomik İlişkiler", dur: "4 Yıl", fee: "4.000 €" },
+      { name: "İşletme", dur: "4 Yıl", fee: "4.000 €" },
+      { name: "Bankacılık ve Finans", dur: "4 Yıl", fee: "4.000 €" },
+      { name: "E-Ticaret", dur: "4 Yıl", fee: "4.000 €" },
+      { name: "Turizm ve Otel Yönetimi", dur: "3 Yıl", fee: "4.000 €" },
+      { name: "Gastronomi", dur: "3 Yıl", fee: "4.000 €" }
+    ]
+  },
+  { 
+    faculty: "Mühendislik Fakültesi", 
+    color: "#d90429",
+    programs: [
+      { name: "Mimarlık", dur: "4 Yıl", fee: "6.000 €" },
+      { name: "Bilgisayar Mühendisliği", dur: "4 Yıl", fee: "6.000 €" },
+      { name: "Yapay Zeka Mühendisliği", dur: "4 Yıl", fee: "6.000 €" },
+      { name: "Endüstri Yönetimi Mühendisliği", dur: "4 Yıl", fee: "4.000 €" },
+      { name: "İnşaat Mühendisliği", dur: "4 Yıl", fee: "4.000 €" }
+    ]
+  },
+  {
+    faculty: "Hukuk Fakültesi",
+    color: "#1e293b",
+    programs: [
+      { name: "Hukuk", dur: "4 Yıl", fee: "4.000 €" },
+      { name: "Siyaset Bilimi ve Uluslararası İlişkiler", dur: "4 Yıl", fee: "3.000 €" }
+    ]
+  },
+  {
+    faculty: "Sağlık Bilimleri",
+    color: "#059669",
+    programs: [
+      { name: "Diş Hekimliği", dur: "5 Yıl", fee: "8.000 €" },
+      { name: "Eczacılık", dur: "5 Yıl", fee: "8.000 €" },
+      { name: "Hemşirelik", dur: "3 Yıl", fee: "4.000 €" },
+      { name: "Ebelik", dur: "3 Yıl", fee: "4.000 €" }
+    ]
+  },
+  {
+    faculty: "Sosyal ve Beşeri Bilimler",
+    color: "#7c3aed",
+    programs: [
+      { name: "Psikoloji", dur: "4 Yıl", fee: "5.000 €" },
+      { name: "Halkla İlişkiler ve Pazarlama", dur: "4 Yıl", fee: "3.000 €" },
+      { name: "Dijital Medya ve Gazetecilik", dur: "4 Yıl", fee: "Kapalı" }
+    ]
+  },
+  {
+    faculty: "Eğitim Fakültesi",
+    color: "#ea580c",
+    programs: [
+      { name: "İngilizce Öğretmenliği", dur: "4 Yıl", fee: "4.000 €" },
+      { name: "Türkçe Öğretmenliği", dur: "4 Yıl", fee: "2.000 €" },
+      { name: "PDR (Psikolojik Danışmanlık)", dur: "4 Yıl", fee: "3.000 €" }
+    ]
+  },
+  {
+    faculty: "Sanat ve Tasarım Fakültesi",
+    color: "#db2777",
+    programs: [
+      { name: "Grafik Tasarımı", dur: "4 Yıl", fee: "4.000 €" },
+      { name: "Moda Tasarımı", dur: "4 Yıl", fee: "4.000 €" },
+      { name: "Görsel Sanatlar", dur: "4 Yıl", fee: "4.000 €" },
+      { name: "İç Mimarlık ve Mobilya Tasarımı", dur: "4 Yıl", fee: "4.000 €" },
+      { name: "Animasyon ve Video Üretimi", dur: "4 Yıl", fee: "4.000 €" }
+    ]
+  }
+];
+
 function App() {
   const [activeFaq, setActiveFaq] = useState(null);
   const [activeVideoUrl, setActiveVideoUrl] = useState(null);
@@ -312,6 +385,68 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* ACADEMIC PROGRAMS & PRICING SECTION - GOOGLE ADS SITELINK DESTINATION */}
+      <section id="ucretler" className="section-pad" style={{ background: 'linear-gradient(to bottom, #f8fafc, #ffffff)', position: 'relative', zIndex: 5, borderTop: '1px solid #e2e8f0' }}>
+        <div className="container">
+          
+          <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 64px' }}>
+            <div style={{ display: 'inline-block', background: 'rgba(217, 4, 41, 0.1)', color: 'var(--ibu-red)', fontWeight: 700, fontSize: '13px', padding: '6px 16px', borderRadius: '980px', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+              RESMİ 2026 ÜCRET BİLGİLERİ
+            </div>
+            <h2 className="typography-h2" style={{ marginBottom: '16px' }}>Lisans Programları ve Ücretler</h2>
+            <p className="typography-p">Uluslararası Balkan Üniversitesi güncel dönem resmi eğitim ücretleri listesi aşağıda yer almaktadır. Fiyatlar yıllıktır.</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {programData.map((faculty, idx) => (
+              <div key={idx} className="premium-card" style={{ display: 'flex', flexDirection: 'column', height: '100%', border: '1px solid rgba(0,0,0,0.04)' }}>
+                <div style={{ padding: '20px 24px', borderBottom: '1px solid #f1f5f9', background: 'linear-gradient(to right, #ffffff, #f8fafc)', display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <div style={{ width: '4px', height: '24px', background: faculty.color, borderRadius: '4px' }}></div>
+                  <h3 style={{ fontSize: '16px', fontWeight: 800, color: 'var(--ibu-navy)' }}>{faculty.faculty}</h3>
+                </div>
+                
+                <div style={{ padding: '16px 0', flex: 1 }}>
+                  {faculty.programs.map((prog, pIdx) => (
+                    <div key={pIdx} style={{ 
+                      padding: '12px 24px', 
+                      display: 'flex', 
+                      justifyContent: 'space-between', 
+                      alignItems: 'center', 
+                      borderBottom: pIdx === faculty.programs.length - 1 ? 'none' : '1px solid #f8fafc',
+                      transition: 'background 0.2s ease'
+                    }}
+                    className="hover-light-gray"
+                    >
+                      <div style={{ maxWidth: '60%' }}>
+                        <div style={{ fontSize: '14px', fontWeight: 700, color: '#334155', marginBottom: '2px', lineHeight: 1.3 }}>{prog.name}</div>
+                        <div style={{ fontSize: '12px', color: '#94a3b8', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '4px' }}>
+                          <Clock size={12} /> {prog.dur}
+                        </div>
+                      </div>
+                      
+                      <div style={{ textAlign: 'right' }}>
+                        <div style={{ fontSize: '16px', fontWeight: 800, color: prog.fee === 'Kapalı' ? '#94a3b8' : 'var(--ibu-navy)', display: 'flex', alignItems: 'center', gap: '2px' }}>
+                           {prog.fee}
+                        </div>
+                        <div style={{ fontSize: '10px', color: '#64748b', fontWeight: 600, textTransform: 'uppercase' }}>Yıllık Ücret</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ marginTop: '48px', background: '#eff6ff', padding: '24px', borderRadius: '16px', border: '1px dashed #3b82f6', textAlign: 'center' }}>
+             <p style={{ fontSize: '15px', color: '#1e40af', fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', flexWrap: 'wrap' }}>
+               <Percent size={20} /> *Erken kayıt dönemine özel nakit veya taksitli ek indirim oranları için lütfen danışmanınızla görüşün.
+             </p>
+          </div>
+
+        </div>
+      </section>
+
 
 
       {/* 3. VIDEO AUTHORITY SECTION */}
