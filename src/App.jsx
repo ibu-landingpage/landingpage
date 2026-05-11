@@ -76,7 +76,7 @@ function App() {
         // Push GTM DataLayer Event for rock-solid conversion tracking
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
-          'event': 'form_submission_success'
+          event: "form_submit"
         });
 
         // Success state handling
